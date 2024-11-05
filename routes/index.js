@@ -1,24 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-// Home Page Route
+// Root Route - renders the single-page layout with all sections
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Home' });
-});
-
-// About Me Page Route
-router.get('/about', function(req, res, next) {
-  res.render('about', { title: 'About Me' });
-});
-
-// Projects Page Route
-router.get('/projects', function(req, res, next) {
-  res.render('projects', { title: 'Projects' });
-});
-
-// Contact Me Page Route
-router.get('/contact', function(req, res, next) {
-  res.render('contact', { title: 'Contact Me' });
 });
 
 // Contact Form Submission Route
@@ -33,7 +18,7 @@ router.post('/contact/submit', function(req, res, next) {
   console.log(`Phone: ${phone}`);
   console.log(`Comments: ${comments}`);
 
-  // Render a confirmation page or redirect to a thank-you page
+  // Render a confirmation page or send a response
   res.send('Thank you for reaching out! We have received your message.');
 });
 
