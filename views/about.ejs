@@ -1,46 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="/stylesheets/style.css">
-</head>
-<body>
-    <header class="bg-primary text-white p-3 text-center">
-        <h1>About Me</h1>
-    </header>
+<% include header.ejs %>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="/">Portfolio</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact">Contact Me</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<section>
+    <h2>About Me</h2>
+    <img src="/images/myphotocopy.jpeg" alt="Your photo" class="profile">
+    <p>Hi, I'm Blessing Muhwezi, an aspiring IT professional with a passion for networking and security.
+        Aside from that, I'm a family-oriented individual, and I love to learn new things. I’m literally down to do anything fun, productive, and that adds to my knowledge.
+    </p>
 
+    <h3>Get to know me a little bit</h3>
+    <video class="video" controls poster="/videos/myvideo.mp4">
+        <source src="/videos/myvideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
 
-    <main class="container mt-4">
-        <section>
-            <h2>Hi, I'm Blessing Muhwezi!</h2>
-            <p>I’m an aspiring IT professional with a passion for networking and security.</p>
-            <img src="/images/myphoto.jpeg" alt="Profile Image" class="img-fluid rounded-circle" style="width:150px;">
-        </section>
-    </main>
- 
-
-    <footer class="bg-dark text-white text-center p-3 mt-3">
-        <p>&copy; 2024 Blessing Muhwezi. Contact: blessingmuhwezi@gmail.com</p>
-    </footer>
-
-    <script src="/jquery/jquery.min.js"></script>
-    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<% include footer.ejs %>

@@ -1,49 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="/stylesheets/style.css">
-</head>
-<body>
-    <header class="bg-primary text-white p-3 text-center">
-        <h1>Projects</h1>
-    </header>
+<% include header.ejs %>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="/">Portfolio</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/about">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact">Contact Me</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    
-    
-    <main class="container mt-4">
-        <section>
-            <h2>CRM AI Enhancement Excellence</h2>
-            <p>Description of project...</p>
-            <a href="/downloads/project1.docx" class="btn btn-primary">Download Project 1</a>
+<section>
+    <h2>Projects</h2>
 
-            <h2>SolarTech Innovations</h2>
-            <p>Description of project...</p>
-            <a href="/downloads/project2.docx" class="btn btn-primary">Download Project 2</a>
-        </section>
-    </main>
+    <!-- Project 1 description with file link-->
+    <article>
+        <h3>CRM AI Enhancement Excellence</h3>
+        <p>Leverage artificial intelligence (AI) and sophisticated customer relationship management (CRM) systems to transform the education industry.
+            The goal of this integration is to improve learning, teaching, and administrative procedures while also improving the entire educational experience.
+        </p>
+        <a href="/downloads/project1.docx" target="_blank">View Project 1 (DOCX)</a>
+    </article>
 
-    <footer class="bg-dark text-white text-center p-3 mt-3">
-        <p>&copy; 2024 Blessing Muhwezi. Contact: blessingmuhwezi@gmail.com</p>
-    </footer>
+    <!-- Project 2 description with file link-->
+    <article>
+        <h3>SolarTech Innovations</h3>
+        <p>Develop an innovative solar panel tracking system that maximizes energy efficiency.
+            Enhance the integration of solar technology in urban environments.
+        </p>
+        <a href="/downloads/project2.docx" download>Download Project 2 (DOCX)</a>
+    </article>
+</section>
 
-    <script src="/jquery/jquery.min.js"></script>
-    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<% include footer.ejs %>
